@@ -1,38 +1,38 @@
 {
     "summary": {
-        "title": "2026년 5월 26일 AI 산업 글로벌 동향 (Reuters/TechCrunch/Verge 기점)",
+        "title": "2026년 5월 26일 AI 전문 기술 브리핑",
         "points": [
-            "OpenAI 샘 알트먼 '일자리 대재앙은 없다' 낙관: 화이트칼라 실무에서 인간의 역할이 여전히 중요함을 강조",
-            "남아프리카공화국 AI 정책 전면 재수정: AI가 생성한 '환각(Hallucination)' 인용구가 발견되어 정책 철회 및 재정비",
-            "Tech 업계 대규모 구조조정과 AI 에이전트 도입: ClickUp, 인력 22% 감축 후 3,000명의 AI 에이전트 실전 배치",
-            "AI 보안 위협의 가시화: 구글 클라우드 COO, 권한 없는 '그림자 AI(Shadow AI)' 도구 사용에 따른 보안 리스크 경고"
+            "Anthropic 기업 가치 9,000억 달러 돌파: OpenAI를 추월하는 업계 시가총액 1위 가시화",
+            "OpenAI 사상 최대 규모 상장(IPO) 준비: 비영리 법인에서 주식 시장 상장 기업으로의 전환 임박",
+            "에너지 인프라 거대 합병: NextEra Energy, AI 데이터 센터 전력 공급을 위해 670억 달러 규모 합병 단행",
+            "AI 규제 완화 기류: EU, 고위험 AI 시스템에 대한 규제 준수 기한을 2028년까지 연장"
         ],
-        "value_analysis": "기술적 진보보다는 '사회적 수용성', '정책적 신뢰도', 그리고 '실질적 보안 대응력'이 산업의 핵심 화두로 부상함"
+        "value_analysis": "AI 산업의 중심이 모델 개발에서 '자본 규모'와 '에너지 인프라 확보' 경쟁으로 완전히 전환됨"
     },
     "articles": [
         {
-            "title": "샘 알트먼, 'AI로 인한 일자리 종말은 오지 않을 것'",
-            "content": "시드니 컨퍼런스에서 샘 알트먼은 AI가 화이트칼라 일자리를 완전히 대체할 것이라는 공포에 대해, 인간 고유의 역할이 여전히 강력하게 유지되고 있다고 분석했습니다.",
-            "link": "https://www.reuters.com/technology/openais-altman-says-ai-unlikely-lead-jobs-apocalypse-2026-05-26/",
-            "value": "Reuters"
+            "title": "Anthropic, OpenAI 기업 가치 추월 눈앞",
+            "content": "앤스로픽이 300억 달러 규모의 펀딩을 통해 9,000억 달러 이상의 가치를 평가받았습니다. 이는 OpenAI의 시장 지배력을 위협하는 역사적 전환점입니다.",
+            "link": "https://www.buildfastwithai.com/news/anthropic-valuation-surpasses-openai",
+            "value": "BuildFastWithAI"
         },
         {
-            "title": "남아공, AI '환각' 인용구로 오염된 AI 정책 철회",
-            "content": "국가 차원의 AI 정책 초안에서 AI가 가짜로 만들어낸 인용문들이 발견되었습니다. 정부는 독립 패널을 구성하여 정책을 전면 재작성하기로 했습니다.",
-            "link": "https://www.reuters.com/world/africa/south-africa-appoints-panel-revise-ai-policy-after-fictitious-references-found-2026-05-26/",
-            "value": "Reuters"
+            "title": "유럽연합(EU), AI법 규제 준수 기한 연장",
+            "content": "EU는 고위험 AI 시스템에 대한 기술적 표준 충족 시간을 벌어주기 위해 규제 적용 시점을 2028년까지 늦추기로 합의했습니다.",
+            "link": "https://www.euractiv.com/section/digital/news/eu-ai-act-compliance-deadlines-postponed/",
+            "value": "EURACTIV"
         },
         {
-            "title": "ClickUp, 인력 22% 감축 및 3,000명 AI 에이전트 도입",
-            "content": "생산성 플랫폼 ClickUp이 대규모 인원 감축과 동시에 대규모 AI 에이전트 투입을 발표했습니다. 인간과 에이전트 비율을 1:3으로 조정하는 파격적인 실험에 나섭니다.",
-            "link": "https://techcrunch.com/2026/05/26/clickup-layoffs-ai-agents-deployment/",
-            "value": "TechCrunch"
+            "title": "교황 리오 14세, AI 윤리에 관한 첫 칙령 발표",
+            "content": "바티칸은 AI가 빈부 격차를 심화시키지 않도록 포용적인 규칙을 만들어야 한다는 내용을 담은 최초의 AI 칙령 'Magnifica Humanitas'를 배포했습니다.",
+            "link": "https://www.euractiv.com/section/digital/news/vatican-pope-ai-encyclical-ethics/",
+            "value": "EURACTIV"
         },
         {
-            "title": "구글 클라우드, '그림자 AI' 보안 위협 경고",
-            "content": "기업 내에서 승인되지 않은 AI 도구를 사용하는 '그림자 AI' 현상이 확산되고 있습니다. 구글 클라우드 COO는 이것이 기업 데이터 보안에 치명적인 구멍이 될 수 있음을 지적했습니다.",
-            "link": "https://techcrunch.com/2026/05/26/google-cloud-coo-ai-security-boardroom/",
-            "value": "TechCrunch"
+            "title": "차세대 반도체: 빛으로 계산하는 하이브리드 입자 개발",
+            "content": "펜실베이니아 대학 연구진이 전자가 아닌 광자(빛)를 이용해 AI 계산을 수행하는 칩 기술을 개발하여 에너지 소비를 획기적으로 줄일 길을 열었습니다.",
+            "link": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/",
+            "value": "ScienceDaily"
         }
     ]
 }
