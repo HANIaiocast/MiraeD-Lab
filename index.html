@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Insight Lab | 글로벌 AI 뉴스 큐레이션</title>
+    <title>AI MIRAE LAB | 글로벌 AI 뉴스 큐레이션</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 </head>
 <body>
     <header>
-        <h1>AI INSIGHT LAB</h1>
+        <h1>AI MIRAE LAB</h1>
         <button id="theme-toggle">테마 변경</button>
     </header>
     
@@ -24,15 +24,20 @@
             </div>
         </section>
 
-        <h3 style="margin-bottom: 2rem; font-size: 1.4rem; font-weight: 800;">🌐 글로벌 주요 뉴스</h3>
+        <div class="news-section-header">
+            <h3 style="margin: 0; font-size: 1.4rem; font-weight: 800;">🌐 글로벌 주요 뉴스</h3>
+            <button id="refresh-news" class="refresh-btn">🔄 다른 뉴스 보기</button>
+        </div>
+        
         <div id="news-list" class="news-grid"></div>
+
         <section id="contact"> 
             <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; font-weight: 800;">🤝 제휴 및 문의</h3> 
-            <p style="margin-bottom: 2rem; color: var(--text-secondary);">AI Insight Lab과 함께할 파트너를 찾습니다. 제안이나 문의사항을 남겨주세요.</p> 
+            <p style="margin-bottom: 2rem; color: var(--text-secondary);">AI MIRAE LAB과 함께할 파트너를 찾습니다. 제안이나 문의사항을 남겨주세요.</p> 
             <form action="https://formspree.io/f/xzdwkpwn" method="POST"> 
                 <div class="form-group"> 
                     <label for="name">성함 / 기업명</label> 
-                    <input type="text" id="name" name="name" placeholder="홍길동 / 인사이트랩" required> 
+                    <input type="text" id="name" name="name" placeholder="홍길동 / 미래랩" required> 
                 </div> 
                 <div class="form-group"> 
                     <label for="email">이메일 주소</label> 

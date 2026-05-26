@@ -30,6 +30,9 @@ themeToggle.addEventListener('click', () => {
     updateThemeUI(newTheme);
 });
 
+// News Storage for Refreshing
+let allArticles = [];
+
 // Fetch and Render News
 async function loadNews() {
     try {
@@ -37,8 +40,9 @@ async function loadNews() {
         if (!response.ok) throw new Error('News data fetch failed');
         const data = await response.json();
         
+        allArticles = data.articles;
         renderSummary(data.summary);
-        renderNewsList(data.articles);
+        refreshNews(); // Initial render
     } catch (error) {
         console.error('Core Error:', error);
     }
@@ -56,6 +60,13 @@ function renderSummary(summary) {
     
     summaryCard.innerHTML = "<ul class=\"summary-list\">" + listItems + "</ul><div class=\"value-analysis\"><span>💡</span><strong>인사이트:</strong> " + summary.value_analysis + "</div>";
     summarySection.style.display = 'block';
+}
+
+function refreshNews() {
+    // Shuffle and pick 4 articles
+    const shuffled = [...allArticles].sort(() => 0.5 - Math.random());
+    const selected = shuffled.slice(0, 4);
+    renderNewsList(selected);
 }
 
 function renderNewsList(articles) {
@@ -100,5 +111,18 @@ function renderNewsList(articles) {
         newsList.appendChild(newsArticle);
     });
 }
+
+// Add event listener for refresh button if it exists
+document.addEventListener('DOMContentLoaded', () => {
+    const refreshBtn = document.getElementById('refresh-news');
+    if (refreshBtn) {
+        refreshBtn.addEventListener('click', () => {
+            // Add rotation effect
+            refreshBtn.classList.add('rotating');
+            refreshNews();
+            setTimeout(() => refreshBtn.classList.remove('rotating'), 500);
+        });
+    }
+});
 
 loadNews();
