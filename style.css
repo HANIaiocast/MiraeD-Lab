@@ -1,64 +1,157 @@
 :root {
-    --bg-color: #f0f2f5;
-    --header-bg: #fff;
-    --text-color: #333;
-    --primary-color: #007bff;
-    --card-bg: #fff;
-    --shadow: rgba(0,0,0,0.1);
+    /* Light Mode */
+    --bg-color: #f8f9fa;
+    --header-bg: #ffffff;
+    --text-color: #212529;
+    --text-secondary: #6c757d;
+    --primary-color: #0d6efd;
+    --accent-color: #f1f3f5;
+    --card-bg: #ffffff;
+    --shadow: 0 10px 30px rgba(0,0,0,0.05);
+    --border-color: #dee2e6;
 }
 
 [data-theme="dark"] {
-    --bg-color: #1a1a1a;
-    --header-bg: #2d2d2d;
-    --text-color: #e0e0e0;
-    --primary-color: #3391ff;
-    --card-bg: #2d2d2d;
-    --shadow: rgba(0,0,0,0.3);
+    /* Dark Mode */
+    --bg-color: #121212;
+    --header-bg: #1e1e1e;
+    --text-color: #e9ecef;
+    --text-secondary: #adb5bd;
+    --primary-color: #3d8bfd;
+    --accent-color: #2b2b2b;
+    --card-bg: #1e1e1e;
+    --shadow: 0 10px 40px rgba(0,0,0,0.3);
+    --border-color: #343a40;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     margin: 0;
     padding: 0;
-    transition: background-color 0.3s, color 0.3s;
+    line-height: 1.6;
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 header {
     background-color: var(--header-bg);
-    padding: 1rem 2rem;
+    padding: 1.2rem 10%;
     text-align: center;
-    box-shadow: 0 2px 4px var(--shadow);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.02);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--border-color);
 }
 
 h1 {
     margin: 0;
     font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--primary-color);
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, var(--primary-color), #6610f2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 main {
-    padding: 2rem;
-    max-width: 800px;
+    padding: 3rem 10%;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-#theme-toggle {
-    background: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
+#daily-summary {
+    margin-bottom: 3.5rem;
+}
+
+.summary-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.summary-card {
+    background: var(--card-bg);
+    padding: 2.5rem;
     border-radius: 20px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.summary-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: var(--primary-color);
+}
+
+.summary-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.summary-list li {
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+    font-weight: 500;
+    padding-left: 2rem;
+    position: relative;
+    color: var(--text-color);
+}
+
+.summary-list li::before {
+    content: "⚡";
+    position: absolute;
+    left: 0;
+    font-size: 1rem;
+}
+
+.value-analysis {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+#theme-toggle {
+    background: var(--accent-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 0.6rem 1.2rem;
+    border-radius: 12px;
     cursor: pointer;
-    font-size: 0.9rem;
-    transition: opacity 0.2s;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
 }
 
 #theme-toggle:hover {
-    opacity: 0.8;
+    background: var(--border-color);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+    header, main { padding: 1rem 5%; }
+    .summary-card { padding: 1.5rem; }
 }
