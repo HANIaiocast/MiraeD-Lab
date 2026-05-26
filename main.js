@@ -37,11 +37,10 @@ async function loadNews() {
         renderNewsList(data.articles);
     } catch (error) {
         console.error('Error loading news:', error);
-        // Fallback or static data if news.json is missing
         renderNewsList([
             {
-                title: "AI 뉴스 데이터를 불러올 수 없습니다.",
-                content: "서버에서 최신 뉴스를 가져오는 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.",
+                title: "데이터를 불러올 수 없습니다.",
+                content: "최신 뉴스를 가져오는 중 오류가 발생했습니다.",
                 link: "#",
                 value: "오류"
             }
@@ -54,10 +53,18 @@ function renderSummary(summary) {
     const summarySection = document.getElementById('daily-summary');
     const summaryContent = document.getElementById('summary-content');
     
+    // Convert long content to bullet points if it's not already structured
+    const points = summary.points || [summary.content];
+    const listItems = points.map(point => `<li>${point}</li>`).join('');
+    
     summaryContent.innerHTML = `
-        <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem;">${summary.title}</p>
-        <p>${summary.content}</p>
-        <p style="margin-top: 1rem; font-style: italic; font-size: 0.9rem;">분석 가치: ${summary.value_analysis}</p>
+        <p style="font-weight: bold; font-size: 1.2rem; margin-bottom: 1rem; color: var(--primary-color);">${summary.title}</p>
+        <ul class="summary-list">
+            ${listItems}
+        </ul>
+        <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px dashed var(--shadow); font-size: 0.9rem; opacity: 0.8;">
+            🎯 <strong>핵심 가치:</strong> ${summary.value_analysis}
+        </div>
     `;
     summarySection.style.display = 'block';
 }
@@ -82,14 +89,17 @@ function renderNewsList(articles) {
         value.setAttribute('slot', 'value');
         value.textContent = article.value || '분석 중';
 
-        const link = document.createElement('span');
-        link.setAttribute('slot', 'link');
-        link.textContent = '자세히 보기';
+        // Properly create and slot the anchor tag for functionality
+        const linkAnchor = document.createElement('a');
+        linkAnchor.setAttribute('slot', 'link-anchor');
+        linkAnchor.href = article.link || '#';
+        linkAnchor.target = "_blank";
+        linkAnchor.textContent = '자세히 보기 →';
 
         newsArticle.appendChild(value);
         newsArticle.appendChild(title);
         newsArticle.appendChild(content);
-        newsArticle.appendChild(link);
+        newsArticle.appendChild(linkAnchor);
 
         newsList.appendChild(newsArticle);
     });
