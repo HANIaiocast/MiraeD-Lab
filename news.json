@@ -1,38 +1,38 @@
 {
     "summary": {
-        "title": "2026년 5월 26일 AI 산업 긴급 브리핑",
+        "title": "2026년 5월 26일 AI 산업 글로벌 동향 (Reuters/TechCrunch/Verge 기점)",
         "points": [
-            "Anthropic 기업 가치 9,000억 달러 돌파: OpenAI를 제치고 업계 시가총액 1위 등극 가능성",
-            "글로벌 인재 전쟁 가속화: 중국, 주요 AI 기업 핵심 인력의 해외 여행 제한 조치 시행",
-            "AI 인프라 확장: NextEra, 670억 달러 규모 유틸리티 합병을 통해 AI 전용 데이터 센터 전력망 확보",
-            "보안 아키텍처의 부재: 기업 77%가 AI 전략을 세웠으나, 실제 방어 가능한 인프라 구축은 26%에 불과"
+            "OpenAI 샘 알트먼 '일자리 대재앙은 없다' 낙관: 화이트칼라 실무에서 인간의 역할이 여전히 중요함을 강조",
+            "남아프리카공화국 AI 정책 전면 재수정: AI가 생성한 '환각(Hallucination)' 인용구가 발견되어 정책 철회 및 재정비",
+            "Tech 업계 대규모 구조조정과 AI 에이전트 도입: ClickUp, 인력 22% 감축 후 3,000명의 AI 에이전트 실전 배치",
+            "AI 보안 위협의 가시화: 구글 클라우드 COO, 권한 없는 '그림자 AI(Shadow AI)' 도구 사용에 따른 보안 리스크 경고"
         ],
-        "value_analysis": "단순 기술 경쟁을 넘어 '자본력'과 '에너지 인프라'가 승패를 결정짓는 국면으로 전환됨"
+        "value_analysis": "기술적 진보보다는 '사회적 수용성', '정책적 신뢰도', 그리고 '실질적 보안 대응력'이 산업의 핵심 화두로 부상함"
     },
     "articles": [
         {
-            "title": "Anthropic, OpenAI 기업가치 추월 전망",
-            "content": "앤스로픽이 300억 달러 규모의 펀딩을 마감하며 기업 가치 9,000억 달러를 돌파했습니다. 이는 OpenAI의 최근 평가액을 넘어서는 수치로, AI 시장의 권력 이동이 가시화되고 있습니다.",
-            "link": "https://www.buildfastwithai.com/news/anthropic-valuation-surpasses-openai",
-            "value": "비즈니스"
+            "title": "샘 알트먼, 'AI로 인한 일자리 종말은 오지 않을 것'",
+            "content": "시드니 컨퍼런스에서 샘 알트먼은 AI가 화이트칼라 일자리를 완전히 대체할 것이라는 공포에 대해, 인간 고유의 역할이 여전히 강력하게 유지되고 있다고 분석했습니다.",
+            "link": "https://www.reuters.com/technology/openais-altman-says-ai-unlikely-lead-jobs-apocalypse-2026-05-26/",
+            "value": "Reuters"
         },
         {
-            "title": "중국, AI 핵심 인력 해외 여행 제한 조치 확대",
-            "content": "알리바바와 딥시크(DeepSeek) 등 주요 AI 기업의 최고 인재들을 대상으로 베이징이 여행 제한을 걸었습니다. 기술 유출 방지와 인재 확보를 위한 국가적 조치로 풀이됩니다.",
-            "link": "https://www.theedgesingapore.com/news/geopolitics/china-expands-travel-curbs-include-top-ai-professionals",
-            "value": "지정학"
+            "title": "남아공, AI '환각' 인용구로 오염된 AI 정책 철회",
+            "content": "국가 차원의 AI 정책 초안에서 AI가 가짜로 만들어낸 인용문들이 발견되었습니다. 정부는 독립 패널을 구성하여 정책을 전면 재작성하기로 했습니다.",
+            "link": "https://www.reuters.com/world/africa/south-africa-appoints-panel-revise-ai-policy-after-fictitious-references-found-2026-05-26/",
+            "value": "Reuters"
         },
         {
-            "title": "NextEra-Dominion Energy, 670억 달러 규모 합병 단행",
-            "content": "미국 역사상 최대 규모의 유틸리티 합병이 발표되었습니다. 이는 차세대 AI 데이터 센터 운영에 필요한 막대한 전력을 공급하기 위한 전략적 선택입니다.",
-            "link": "https://www.morningstar.com/news/business-wire/nextera-dominion-energy-merger-ai-infrastructure",
-            "value": "인프라"
+            "title": "ClickUp, 인력 22% 감축 및 3,000명 AI 에이전트 도입",
+            "content": "생산성 플랫폼 ClickUp이 대규모 인원 감축과 동시에 대규모 AI 에이전트 투입을 발표했습니다. 인간과 에이전트 비율을 1:3으로 조정하는 파격적인 실험에 나섭니다.",
+            "link": "https://techcrunch.com/2026/05/26/clickup-layoffs-ai-agents-deployment/",
+            "value": "TechCrunch"
         },
         {
-            "title": "의료 AI, 정신건강 상담 사전 인터뷰 도입",
-            "content": "KAIST와 강남세브란스 연구진이 환자 상담 전 AI가 사전 인터뷰를 진행하는 시스템을 공개했습니다. 의료진의 업무 부담을 줄이고 진단의 정확도를 높이는 사례입니다.",
-            "link": "https://www.news-medical.net/news/20260526/ASCP-2026-AI-assistant-psychiatric-consultations.aspx",
-            "value": "의료 혁신"
+            "title": "구글 클라우드, '그림자 AI' 보안 위협 경고",
+            "content": "기업 내에서 승인되지 않은 AI 도구를 사용하는 '그림자 AI' 현상이 확산되고 있습니다. 구글 클라우드 COO는 이것이 기업 데이터 보안에 치명적인 구멍이 될 수 있음을 지적했습니다.",
+            "link": "https://techcrunch.com/2026/05/26/google-cloud-coo-ai-security-boardroom/",
+            "value": "TechCrunch"
         }
     ]
 }
