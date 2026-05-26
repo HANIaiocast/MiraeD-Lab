@@ -14,7 +14,7 @@ const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 
 const updateThemeUI = (theme) => {
-    themeToggle.textContent = theme === 'dark' ? '라이트 모드' : '다크 모드';
+    themeToggle.textContent = theme === 'dark' ? '☀️ 라이트 모드' : '🌙 다크 모드';
 };
 
 const savedTheme = localStorage.getItem('theme') || 'light';
@@ -78,18 +78,24 @@ function renderNewsList(articles) {
         value.setAttribute('slot', 'value');
         value.textContent = article.value;
 
-        const linkAnchor = document.createElement('a');
-        linkAnchor.setAttribute('slot', 'link-anchor');
-        linkAnchor.className = 'read-more';
-        linkAnchor.href = article.link;
-        linkAnchor.target = "_blank";
-        linkAnchor.rel = "noopener noreferrer";
-        linkAnchor.innerHTML = '뉴스 원문 읽기 →';
+        const sourceUrl = document.createElement('span');
+        sourceUrl.setAttribute('slot', 'source-url');
+        sourceUrl.textContent = article.source_url;
+
+        const img = document.createElement('img');
+        img.setAttribute('slot', 'image');
+        img.className = 'article-image';
+        img.src = article.image;
+        img.alt = article.title;
+        img.onerror = function() {
+            this.src = 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800'; // Fallback
+        };
 
         newsArticle.appendChild(value);
         newsArticle.appendChild(title);
         newsArticle.appendChild(content);
-        newsArticle.appendChild(linkAnchor);
+        newsArticle.appendChild(sourceUrl);
+        newsArticle.appendChild(img);
 
         newsList.appendChild(newsArticle);
     });

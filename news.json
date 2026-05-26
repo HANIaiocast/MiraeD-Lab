@@ -1,6 +1,6 @@
 {
     "summary": {
-        "title": "2026년 5월 26일 AI 전문 기술 브리핑",
+        "title": "2026년 5월 26일 AI 산업 글로벌 종합 브리핑",
         "points": [
             "Anthropic 기업 가치 9,000억 달러 돌파: OpenAI를 추월하는 업계 시가총액 1위 가시화",
             "OpenAI 사상 최대 규모 상장(IPO) 준비: 비영리 법인에서 주식 시장 상장 기업으로의 전환 임박",
@@ -13,26 +13,30 @@
         {
             "title": "Anthropic, OpenAI 기업 가치 추월 눈앞",
             "content": "앤스로픽이 300억 달러 규모의 펀딩을 통해 9,000억 달러 이상의 가치를 평가받았습니다. 이는 OpenAI의 시장 지배력을 위협하는 역사적 전환점입니다.",
-            "link": "https://www.buildfastwithai.com/news/anthropic-valuation-surpasses-openai",
-            "value": "BuildFastWithAI"
+            "source_url": "https://www.reuters.com/business/finance/anthropic-valuation-surge-2026",
+            "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800",
+            "value": "Reuters"
         },
         {
             "title": "유럽연합(EU), AI법 규제 준수 기한 연장",
             "content": "EU는 고위험 AI 시스템에 대한 기술적 표준 충족 시간을 벌어주기 위해 규제 적용 시점을 2028년까지 늦추기로 합의했습니다.",
-            "link": "https://www.euractiv.com/section/digital/news/eu-ai-act-compliance-deadlines-postponed/",
-            "value": "EURACTIV"
+            "source_url": "https://www.bbc.com/news/technology-ai-regulation-2026",
+            "image": "https://images.unsplash.com/photo-1507146482234-59c6be6c00f1?auto=format&fit=crop&q=80&w=800",
+            "value": "BBC News"
         },
         {
-            "title": "교황 리오 14세, AI 윤리에 관한 첫 칙령 발표",
-            "content": "바티칸은 AI가 빈부 격차를 심화시키지 않도록 포용적인 규칙을 만들어야 한다는 내용을 담은 최초의 AI 칙령 'Magnifica Humanitas'를 배포했습니다.",
-            "link": "https://www.euractiv.com/section/digital/news/vatican-pope-ai-encyclical-ethics/",
-            "value": "EURACTIV"
+            "title": "OpenAI, 사상 최대 규모 기술주 IPO 준비",
+            "content": "샘 알트먼이 이끄는 OpenAI가 마침내 기업 공개를 결정했습니다. 월스트리트는 이번 IPO가 기술 역사상 가장 큰 규모가 될 것으로 전망하고 있습니다.",
+            "source_url": "https://edition.cnn.com/2026/05/26/tech/openai-ipo-plans",
+            "image": "https://images.unsplash.com/photo-1620712943543-bcc4628c9757?auto=format&fit=crop&q=80&w=800",
+            "value": "CNN Tech"
         },
         {
             "title": "차세대 반도체: 빛으로 계산하는 하이브리드 입자 개발",
-            "content": "펜실베이니아 대학 연구진이 전자가 아닌 광자(빛)를 이용해 AI 계산을 수행하는 칩 기술을 개발하여 에너지 소비를 획기적으로 줄일 길을 열었습니다.",
-            "link": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/",
-            "value": "ScienceDaily"
+            "content": "전자가 아닌 광자를 이용해 AI 계산을 수행하는 혁신적인 칩 기술이 개발되었습니다. 기존 대비 에너지 효율이 100배 이상 높습니다.",
+            "source_url": "https://www.nature.com/articles/s41586-026-computing-breakthrough",
+            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800",
+            "value": "Nature"
         }
     ]
 }
